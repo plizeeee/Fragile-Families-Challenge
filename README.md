@@ -1,7 +1,9 @@
-The Fragile Families Challenge is a data science competition, where competitors aim to predict life outcomes of disavantaged US children at the age of 16 using a plethora of data collected via interviews and surveys from birth until the child turned 10 https://www.fragilefamilieschallenge.org/
-This repository contains the code and report of my project predicting the six life outcomes of the Fragile Families Challenge and interpretting the models (Used for my applied machine learning course as part of my MSc. in Social Data Science at the University of Oxford). The task is typically considered extremely challenging to perform better than chance, and all of my best performing models performed better than baseline models.
+The Fragile Families Challenge is a data science competition where competitors attempt to predict life outcomes of disavantaged US children at the age of 16 using a plethora of data collected via interviews and surveys from the child's birth until they turned 10 [www.fragilefamilieschallenge.org/](https://www.fragilefamilieschallenge.org/).
+This repository contains the code and report of my project predicting the six life outcomes of the Fragile Families Challenge and interpretting the models (Used for my applied machine learning course as part of my MSc. in Social Data Science at the University of Oxford). Due to the complexity of the task of predicting life outcomes as well as the challenge's relatively small dataset (~2100 training examples) and very messy data, it is difficult to train models that perform better than random chance. All of my best performing models performed better than baseline models and I showed that all of my models automatically learned features intuitively related to each of the six life outcomes.
 
-Hyperparameter Tuning
+### Data Cleaning
+
+### Models: Hyperparameter Tuning and Performance
 Depending on the model type, the hyperparameters were tuned using either bayesian optimization or gridsearch (depending on the parameter search space among other considerations).
 
 ![alt text](https://github.com/plizeeee/Fragile-Families-Challenge/blob/main/Images/Accuracies%20on%20Test%20Set.PNG)
