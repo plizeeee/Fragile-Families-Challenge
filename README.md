@@ -1,5 +1,6 @@
 Hyperparameter Tuning
-Interpretting Results
 ![alt text](https://github.com/plizeeee/Fragile-Families-Challenge/blob/main/Images/Accuracies%20on%20Test%20Set.PNG)
+### Interpretting Machine Learning Models
+The best performing models were interpretted using Shapley Additive Explanation (SHAP) plots to understand which features were driving the model predictions for each life outcome (and better understand the factors associated with each life outcome). SHAP feature importance plots were used to understand the global importance of each feature for the model’s predictions – To put it differently, whenever the model makes a prediction, which features, on average, affect the model’s prediction most? The features importance plots do not give any indication on the direction of the effect (positive or negative) or each feature on model prediction. Therefore, SHAP bee swarm plots were used to visualize the individual effects of each observed feature value in the dataset on the output to better understand if the features positively or negatively affect the predicted outcome.
 ![alt text](https://github.com/plizeeee/Fragile-Families-Challenge/blob/main/Images/Example%20SHAP%20Features%20Importance%20Plot.PNG)
 ![alt text](https://github.com/plizeeee/Fragile-Families-Challenge/blob/main/Images/Example%20SHAP%20Bee%20Swarm%20Plot.PNG)
