@@ -1,4 +1,9 @@
+The Fragile Families Challenge is a data science competition, where competitors aim to predict life outcomes of disavantaged US children at the age of 16 using a plethora of data collected via interviews and surveys from birth until the child turned 10 https://www.fragilefamilieschallenge.org/
+This repository contains the code and report of my project predicting the six life outcomes of the Fragile Families Challenge and interpretting the models (Used for my applied machine learning course as part of my MSc. in Social Data Science at the University of Oxford). The task is typically considered extremely challenging to perform better than chance, and all of my best performing models performed better than baseline models.
+
 Hyperparameter Tuning
+Depending on the model type, the hyperparameters were tuned using either bayesian optimization or gridsearch (depending on the parameter search space among other considerations).
+
 ![alt text](https://github.com/plizeeee/Fragile-Families-Challenge/blob/main/Images/Accuracies%20on%20Test%20Set.PNG)
 ### Interpretting Machine Learning Models
 The best performing models were interpretted using Shapley Additive Explanation (SHAP) plots to understand which features were driving the model predictions for each life outcome (and better understand the factors associated with each life outcome). SHAP feature importance plots were used to understand the global importance of each feature for model predictions – To put it differently, whenever the model makes a prediction, which features, on average, affect the model’s prediction most? The features importance plots do not give any indication on the direction of the effect (positive or negative) or each feature on model prediction. Therefore, SHAP bee swarm plots were used to visualize the individual effects of each observed feature value in the dataset on the output to better understand if the features positively or negatively affect the predicted outcome.
