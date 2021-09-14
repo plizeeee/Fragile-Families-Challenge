@@ -1,8 +1,6 @@
 The Fragile Families Challenge is a data science competition where competitors attempt to predict life outcomes of disavantaged US children at the age of 15 using a plethora of data collected via interviews and surveys from the child's birth until they turned 10 [www.fragilefamilieschallenge.org/](https://www.fragilefamilieschallenge.org/).
 This repository contains the code and report of my project predicting the six life outcomes of the Fragile Families Challenge and interpretting the models (Used for my applied machine learning course as part of my MSc. in Social Data Science at the University of Oxford). Due to the complexity of the task of predicting life outcomes as well as the challenge's relatively small dataset (~2100 training examples) and very messy data, it is difficult to train models that perform better than random chance. All of my best performing models performed better than baseline models and I showed that my models automatically learned features intuitively related to each of the six life outcomes. Below I include various key figures and a short summary of my work.
 
-### Data Cleaning
-
 ### Models: Hyperparameter Tuning and Performance
 After cleaning the data various models were trained (see full report for the data cleaning procedure. The data was very messy, so there were a lot of data cleaning steps before any model training took place).
 The models trained in my work included elastic net, tree-based models using Microsoft’s Light Gradient Boosting Machine Framework (LGBM), as well as a 1-hidden layer neural network (only 1 hidden layer to minimize overfitting).
